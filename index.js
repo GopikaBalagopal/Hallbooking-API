@@ -8,7 +8,7 @@ const app = express();
 
 
 const PORT = process.env.PORT;
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL = process.env.MONGO_URL ||  "mongodb+srv://root:oqDsAxW0WZV3E5Ty@cluster0.l3dvu5u.mongodb.net/<database-name>";
 console.log('..', MONGO_URL)
 //In-built middleware
 app.use(express.json());
